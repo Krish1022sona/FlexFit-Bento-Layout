@@ -1,0 +1,414 @@
+@font-face {
+    font-family: "Suisse BP Int'l";
+    src: url(./SuisseIntl-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Suisse Int'l";
+    src: url(./SuisseIntl-Light.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+body{
+    padding: 20px;
+}
+
+main{
+    font-family: "Suisse BP Int'l", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1.5fr 1fr 1fr 1.2fr;
+    gap: 20px;
+    grid-template-areas: 
+    "boy download palatte strength"
+    "boy logo logo strength"
+    "redefine logo logo signup"
+    "train train girl signup"
+    ;
+}
+
+.text{
+    font-family: "Suisse Int'l", sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.box{
+    border-radius: 30px;
+    /* border: 1px solid white; */
+}
+
+#boy{
+    grid-area: boy;
+    background: url("https://im.whatshot.in/img/2022/Nov/istock-901960792-61b7146334820-1667548399.jpeg");
+    background-size: cover;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#cross{
+    height: 80px;
+    width: 80px;
+    background-color: black;
+    border-radius: 50%;
+    padding: 20px
+}
+
+#cross svg{
+    height: 100%;
+    width: 100%;
+}
+
+#container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.black-box-transparent{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 30%;
+    height: 90px;
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon{
+    height: 50px;
+    width: 50px;
+    background-color: #FED702;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon i{
+    font-size: 30px;
+}
+
+.boxy-text{
+    font-family: "Suisse Int'l", sans-serif;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.boxy-text h1{
+    font-size: 20px;
+}
+
+.boxy-text p{
+    font-size: 10px;
+}
+
+#download{
+    grid-area: download;
+    background-color: #FED702;
+}
+
+#palatte{
+    padding: 50px 30px 30px 30px;
+    grid-area: palatte;
+    background-color: #FEFEFE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#palatte p{
+    font-family: "Suisse Int'l", sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+#body-fonts{
+    font-family: "Suisse Int'l", sans-serif;
+}
+
+#color-palette{
+    height: 14px;
+    display: flex;
+    gap: -10px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+}
+
+.color{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 7px;
+}
+
+#pink{
+    background-color: #CD806F;
+}
+
+#yellow{
+    background-color: #FED702;
+    transform: translate(25%);
+}
+
+#white{
+    background-color: #FEFEFE;
+    transform: translate(50%);
+}
+
+#black{
+    background-color: #000000;
+    transform: translate(75%);
+}
+
+#strength{
+    grid-area: strength;
+    background-color: #FEFEFE;
+    padding: 50px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#top-strength{
+    display: flex;
+    align-items: center;
+}
+
+#small-black-box{
+    background-color: black;
+    width: 17px;
+    height: 25px;
+}
+    
+#small-yellow-box{
+    background-color: #FED702;
+    width: 17px;
+    height: 25px;
+    margin-left: 3px;
+    margin-right: 20px;
+}
+
+#middle-strength{
+    font-size: 30px;
+}
+
+#bottom-strength{
+    font-family: "Suisse Int'l", sans-serif;
+    height: 36%;
+    background-color: #EBB0A2;
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow:hidden;
+}
+
+#bottom-strength .bg-logo-container{
+    position: absolute;
+}
+
+#bottom-strength .bg-logo-container svg{
+    scale: 2.0;
+    transform: translate(40%, 30%);
+}
+
+#location-container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#location{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#bottom-strength i{
+    font-size: 30px;
+    color: #FED702
+}
+
+#location-container, #website{
+    position: relative;
+    z-index: 3;
+}
+
+#logo{
+    grid-area: logo;
+    background-color: #FDF8E3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo p{
+    font-size: 100px;
+}
+
+#signup{
+    grid-area: signup;
+    background-color: #EBB0A2;
+}
+
+#redefine{
+    grid-area: redefine;
+    background-color: #FEFEFE;
+    padding: 5% 10%
+}
+
+#redefine h1{
+    font-size: 25px;
+}
+
+#bottom-redefine{
+    display:flex;
+    gap: 15px;
+    font-family: 'Suisse Int\'l', sans-serif;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+#bottom-redefine .bg-logo-container{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 5px;
+    align-items: center;
+}
+
+#bottom-redefine .bg-logo-container svg{
+    height: 70%;
+    width: 70%;
+}
+
+#train{
+    grid-area: train;
+    padding: 20px;
+    background-color: #EBB0A2;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    grid-template-areas: 
+    "image text text"
+    "image count people"
+    ;
+}
+
+#train #image{
+    grid-area: image;
+    overflow: hidden;
+    background-color: black;
+}
+
+#train #image img{
+    width: 100%;
+    height: 100%;
+    transform: translate(-10%, 0);
+}
+
+#train #text{
+    padding-left: 30px;
+    font-size: 12px;
+    grid-area: text;
+}
+
+#train #count{
+    padding-left: 30px;
+    grid-area: count;
+}
+
+#train #count h1{
+    font-size: 60px;
+}
+
+#train #count p{
+    font-family: 'Suisse Int\'l', sans-serif;
+    letter-spacing: 1px;
+}
+
+#train #people{
+    grid-area: people;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.person{
+    height: 70%;
+    width: 30%;
+    border-radius: 50%;
+    border: 2px solid #EBB0A2;
+    overflow: hidden;
+    position: absolute
+}
+
+#person-2{
+    transform: translate(85%, 0);
+}
+
+#person-3{
+    transform: translate(170%, 0);
+}
+
+.person img{
+    width: 100%;
+}
+
+#girl{
+    grid-area: girl;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: #C8B8B5;
+}
+
+.bg-logo-container{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#girl svg{
+    scale: 4.5;
+    transform: translate(0, 45%);
+}
+
+#girl img{
+    height: 105%;
+    position: absolute;
+    transform: translate(0, -4.6%);
+}
+
