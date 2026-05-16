@@ -81,7 +81,7 @@ main{
 }
 
 .black-box-transparent{
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 30%;
     height: 90px;
     border-radius: 20px;
@@ -277,6 +277,106 @@ main{
 #signup{
     grid-area: signup;
     background-color: #EBB0A2;
+    padding: 20px 20px 0px 20px;
+}
+
+#loading{
+    display: flex;
+    height: 20px;
+    width: 100%;
+    /* border: 2px solid black; */
+    height:5%;
+}
+
+#loading #bar-R{
+    height: 4px;
+    background:  linear-gradient(90deg, black, black, #A88175);
+    width: 25%;
+    border-radius: 2px;
+}
+
+#loading #bar-L{
+    height: 4px;
+    background: linear-gradient(90deg, #B98C7B, #EBB0A2);
+    width: 75%;
+    border-radius: 2px;
+}
+
+#top{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height:10%;
+}
+
+#top .bg-logo-container{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#top .bg-logo-container svg{
+    height: 70%;
+    width: 70%;
+}
+
+#bar{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#bar p{
+    font-family: 'Suisse Int\'l', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+#bottom{
+    height: 85%;
+    background: url(./iphone\ guy.png);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 4fr 1fr 1fr;
+    grid-template-areas: 
+    "blank blank"
+    "potential search"
+    "button blank2";
+    padding: 0 15%;
+}
+
+#potential{
+    grid-area: potential;
+    color: white;
+}
+
+#potential h1{
+    font-size: 25px;
+}
+
+#button{
+    grid-area: button;
+    height: 80%;
+    width:80%;
+    background-color: #FED702;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search{
+    grid-area: search;
+}
+
+#search svg{
+    color: white;
 }
 
 #redefine{
@@ -303,6 +403,8 @@ main{
     height: 50px;
     border-radius: 25px;
     padding: 5px;
+    display:flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -393,7 +495,7 @@ main{
     background-color: #C8B8B5;
 }
 
-.bg-logo-container{
+#girl .bg-logo-container{
     height: 100%;
     width: 100%;
     overflow: hidden;
